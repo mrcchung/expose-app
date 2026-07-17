@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support — Exposé</title>
+  <style>
+    :root {
+      --brand: #d13366;
+      --dark: #12080e;
+      --surface: #26101c;
+      --surface2: #37162a;
+      --text: #ffffff;
+      --muted: rgba(255,255,255,0.55);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+      background: var(--dark);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    nav {
+      padding: 20px 24px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    nav a { color: var(--text); text-decoration: none; font-weight: 700; font-size: 18px; }
+    nav a.back { color: var(--muted); font-size: 14px; font-weight: 500; }
+    main {
+      max-width: 700px;
+      margin: 64px auto;
+      padding: 0 24px 96px;
+    }
+    h1 { font-size: 36px; font-weight: 800; letter-spacing: -1px; margin-bottom: 8px; }
+    .sub { color: var(--muted); font-size: 17px; margin-bottom: 56px; }
+    .faq-section h2 {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--brand);
+      margin-bottom: 16px;
+      margin-top: 48px;
+    }
+    details {
+      background: var(--surface);
+      border-radius: 14px;
+      margin-bottom: 10px;
+      border: 1px solid rgba(255,255,255,0.06);
+      overflow: hidden;
+    }
+    details[open] { border-color: rgba(209,51,102,0.25); }
+    summary {
+      padding: 18px 20px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: '+';
+      font-size: 22px;
+      font-weight: 300;
+      color: var(--brand);
+      line-height: 1;
+      transition: transform 0.2s;
+    }
+    details[open] summary::after { transform: rotate(45deg); }
+    .answer {
+      padding: 0 20px 18px;
+      color: rgba(255,255,255,0.72);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    .answer a { color: var(--brand); }
+
+    .contact-card {
+      background: var(--surface);
+      border-radius: 20px;
+      padding: 36px 28px;
+      margin-top: 56px;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    .contact-card h3 { font-size: 22px; font-weight: 800; margin-bottom: 8px; }
+    .contact-card p { color: var(--muted); margin-bottom: 24px; }
+    .btn {
+      display: inline-block;
+      background: var(--brand);
+      color: #fff;
+      padding: 13px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="/cc-photo/">Exposé</a>
+  <a href="/cc-photo/" class="back">← Back</a>
+</nav>
+<main>
+  <h1>Support</h1>
+  <p class="sub">Answers to common questions about Exposé.</p>
+
+  <div class="faq-section">
+    <h2>Subscription & Billing</h2>
+
+    <details>
+      <summary>How do I start the free trial?</summary>
+      <div class="answer">
+        <p>Open the app and tap the crown icon or visit Settings → Go Pro. Choose the yearly plan to get a 7-day free trial. No charge until the trial ends. You can cancel anytime before the trial expires in iPhone Settings → Your Name → Subscriptions.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I cancel my subscription?</summary>
+      <div class="answer">
+        <p>Go to iPhone Settings → tap your name at the top → Subscriptions → find Exposé and tap Cancel Subscription. You keep Pro access until the current period ends. We cannot cancel subscriptions on your behalf — Apple handles all billing.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I restore my purchase on a new device?</summary>
+      <div class="answer">
+        <p>Open Exposé → Settings → Restore Purchases. Make sure you're signed in with the same Apple ID used to subscribe. If that doesn't work, contact us.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>What does Pro include?</summary>
+      <div class="answer">
+        <p>Exposé Pro unlocks: 130+ premium frames, all layout options (2-cut, 4-cut, 6-cut, wide), beauty mode filters, film grade overlays, GIF & Reels export, AI stylization (anime, watercolor, and more), and no watermark on your strips.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>What are AI Credits?</summary>
+      <div class="answer">
+        <p>AI stylization (converting your strip into anime, watercolor, oil painting, etc.) uses credits. Pro subscribers receive credits each month. You can also buy additional credit packs from Settings → Buy Credits.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="faq-section">
+    <h2>Using the App</h2>
+
+    <details>
+      <summary>How does the auto-timer work?</summary>
+      <div class="answer">
+        <p>Tap the shutter button once to start. A 3-second countdown fires, then the camera takes a shot automatically. It repeats for however many photos your layout requires (1, 2, 4, or 6). Just pose — no need to tap again.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Can I use the front or back camera?</summary>
+      <div class="answer">
+        <p>Yes — tap the flip camera icon in the booth view to switch. Beauty mode works with the front camera (TrueDepth). The back camera is great for group shots.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I save my strip to Photos?</summary>
+      <div class="answer">
+        <p>After your strip is generated, tap the share icon (bottom of the strip preview) and choose "Save Image". The first time, the app will ask for permission to access your photo library.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I export a Reel or GIF?</summary>
+      <div class="answer">
+        <p>On the strip preview screen, tap "Reel" or "GIF" (Pro feature). The animated version is saved to your Photos app, ready to share on Instagram or TikTok.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Why is my widget showing the wrong photo?</summary>
+      <div class="answer">
+        <p>Widgets update in the background on iOS's schedule — it may take a few minutes. Long-press the widget → Edit Widget to reconfigure it. If it's stuck, removing and re-adding the widget usually fixes it.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="faq-section">
+    <h2>Frames & Content</h2>
+
+    <details>
+      <summary>How often are new frames added?</summary>
+      <div class="answer">
+        <p>We add new frames every few weeks, especially around holidays and seasons. Open the Frames tab to see the latest. No app update needed — frames sync automatically.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Can I request a custom frame?</summary>
+      <div class="answer">
+        <p>We love suggestions! Email us at <a href="mailto:mrchongchung@gmail.com">mrchongchung@gmail.com</a> with your idea. Popular requests get added to our design queue.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="contact-card">
+    <h3>Still need help?</h3>
+    <p>Can't find what you're looking for? We usually respond within 24 hours.</p>
+    <a href="mailto:mrchongchung@gmail.com" class="btn">Email Support</a>
+  </div>
+</main>
+</body>
+</html>
